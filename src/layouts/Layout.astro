@@ -3,6 +3,8 @@ import "../styles/global.css";
 import "@fontsource/poppins";
 import Header from "../components/header.astro";
 import Footer from "../components/footer.astro";
+
+const { title } = Astro.props;
 ---
 
 <!doctype html>
@@ -12,7 +14,7 @@ import Footer from "../components/footer.astro";
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>English</title>
+		<title>{title}</title>
 	</head>
 	<body class="grid">
 		<Header />
@@ -25,7 +27,7 @@ import Footer from "../components/footer.astro";
 	html,
 	body {
 		font-family: "Poppins", sans-serif;
-		grid-template-rows: 75px 1fr 50px;
+		grid-template-rows: 100px 1fr 50px;
 		width: 100%;
 		margin: 0;
 		padding: 0;
