@@ -5,9 +5,14 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Home">
-	<main class="bg-white flex-row justify-center align-middle">
-		<p class="text-8xl text-center">Intercourse, Pennsylvania</p>
-
-		<p class="text-4xl text-center">The main issue</p>
+	<main class="bg-white text-white flex flex-col justify-center align-middle">
+		<p class="text-8xl text-center z-1000">Intercourse, Pennsylvania</p>
+		<p class="text-4xl text-center z-1000">The main issue</p>
+		<div class="absolute w-full blur-lg z-0">
+			<img src="./background.jpeg" alt="" />
+		</div>
+		<div class="absolute w-full blur-xl rounded-10xl z-100">
+			<img src="./background.jpeg" alt="" />
+		</div>
 	</main>
 </Layout>
